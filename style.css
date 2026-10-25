@@ -1,6 +1,6 @@
 /* 1. 对整个网页的居住区（body）进行装修 */
 body{
-  bankground-color: #f0f4f8; /* 给背景刷上一层淡淡的蓝灰色 */
+  bankground-color: ffeaa7; /* 给背景刷上一层淡淡的蓝灰色 */
   color:#333333;             /* 文字变成柔和的深灰色，不刺眼 */
   font-family:sans-serif;    /* 换成现代无衬线字体，更好看 */
   text-align: center;        /* 让文字全部居中显示 */
