@@ -1,20 +1,54 @@
 <!DOCTYPE html>
-<html lang=“zh_CN”>
+<html lang="zh-CN">
 <head>
-  <meat charset="UTF-8">
-  <meat name="viewport" content="width=device-width,initial-scela=1.0">
-  <title>my book</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人站点 - PCCOS</title>
   <link rel="stylesheet" href="style.css">
-</head>  
-    <body>
-      <div>
-        <h1>menu</h1>
-        <p>about us</p>
-        <button>inside</button>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">PCCOS</h1>
+      <nav>
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#guestbook">留言板</a>
+        <button id="theme-toggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 个人介绍区域 -->
+    <section id="about" class="hero">
+      <h2>你好，我是 PCCOS 👋</h2>
+      <p>欢迎来到我的全栈学习与展示站点！这里基于 Cloudflare Pages & Workers 构建。</p>
+    </section>
+
+    <!-- 学习卡片展示 -->
+    <section id="projects" class="grid">
+      <div class="card">
+        <h3>📍 1. 静态美化</h3>
+        <p>已完成 HTML/CSS/JS 全面美化与响应式适配。</p>
       </div>
+      <div class="card">
+        <h3>💬 2. D1 留言板</h3>
+        <p>（准备中）基于 Cloudflare D1 数据库的实时留言。</p>
+      </div>
+      <div class="card">
+        <h3>📝 3. 文章系统</h3>
+        <p>（准备中）动态加载与展示数据库文章。</p>
+      </div>
+    </section>
+  </main>
 
-      <script src="srcipt.js"></script>
-    </body>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 PCCOS. Powered by Cloudflare Pages.</p>
+    </div>
+  </footer>
 
-  </html>
-    
+  <script src="script.js"></script>
+</body>
+</html>
